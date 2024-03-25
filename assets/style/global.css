@@ -2,4 +2,20 @@ body {
     background-image: url('../images/fondo_principal.jpg');
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: burlywood;
+    font-size: 1.2rem;
+    justify-content:right;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 1.4rem;
+    display: block;
+    width: 100%;
+    background-color: #EB9C63;
+    text-align: center;
 }
