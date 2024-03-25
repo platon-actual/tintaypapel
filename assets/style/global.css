@@ -1,3 +1,11 @@
+/* Estilo Normalizado */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
 body {
     background-image: url('../images/fondo_principal.jpg');
     background-position: center;
@@ -8,14 +16,15 @@ body {
 nav {
     background-color: burlywood;
     font-size: 1.2rem;
-    justify-content:right;
+    justify-content: right;
     width: 100%;
 }
 
 .titulo {
-    font-size: 1.4rem;
+    font-family: "Metamorphous", serif;
+    font-size: 1.5rem;
     display: block;
-    width: 100%;
     background-color: #EB9C63;
     text-align: center;
+    font-weight: bolder;
 }
