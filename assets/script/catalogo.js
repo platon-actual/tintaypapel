@@ -11,17 +11,15 @@ function searchBooks() {
         data.items.forEach(book => {
             output += `
                 <div class='results-box'>
-                    <ul>
-                    <img src=${book.volumeInfo.imageLinks.smallThumbnail}>
-                        <li><b>Nombre: </b> ${book.volumeInfo.title}</li>
-                        <li><b>Autor/es: </b> ${book.volumeInfo.authors}</li>
-                        // agregar boton para ver
-                        // <a href=${book.volumeInfo.canonicalVolumeLink}><b>Ver este libro</b></a>
-                    </ul>
+                    <img src=${book.volumeInfo.imageLinks.smallThumbnail}> <br>
+                    <b>Nombre: </b> ${book.volumeInfo.title} <br>
+                    <b>Autor/es: </b> ${book.volumeInfo.authors} <br>
+                    <a href=${book.volumeInfo.canonicalVolumeLink}><b>Ver este libro</b></a>
                 </div>
             `;
         });
         //mostrar los resultados en el documento
         document.getElementById('output').innerHTML = output;
-    });
+    })
+    .catch((error) => console.log(error));
 }

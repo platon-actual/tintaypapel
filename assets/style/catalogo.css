@@ -3,3 +3,15 @@ p {
     background-color: saddlebrown;
     font-weight: bolder;
 }
+
+.results-box {
+    display: inline-block;
+    background-color: saddlebrown;
+    border: 4px solid;
+    border-color:chocolate;
+    margin: 10px 10px 10px 10px;
+}
+
+.results-box a:hover {
+    color: white;
+}
